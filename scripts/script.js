@@ -14,7 +14,7 @@ async function getCharacters() {
 
 function parseJsonToCharacter(element) {
     const { name, image, status, species, location } = element;
-    return new Character(name, image, status, species, location);
+    return new Character(name, image, status, species, location.name);
 }
 
 function renderAllCharacters(characters) {
